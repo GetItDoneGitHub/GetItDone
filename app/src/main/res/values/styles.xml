@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#2A5865</item>
+        <item name="colorPrimaryDark">#2A5865</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Remove action bar at the top -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>`
+
+    </style>
+
+</resources>
