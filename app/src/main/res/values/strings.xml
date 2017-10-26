@@ -1,4 +1,50 @@
 <resources>
     <string name="app_name">Get It Done</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_task">Task Title, e.g Moving houses</string>
+    <string name="title_description">Task description, e.g Help me move, furniture attached</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="text_moving">How can it be done?</string>
+    <string name="text_location">Task Location</string>
+    <string name="button_posttask">Post Task</string>
+    <string name="firstname">First Name</string>
+    <string name="hint_fname"><font size="12">First Name</font></string>
+    <string name="surname">Surname</string>
+    <string name="hint_surname"><font size="12">Surname</font></string>
+    <string name="creditcard">Credit Card</string>
+    <string name="hint_creditcard"><font size="12">Credit Card</font></string>
+    <string name="expirydate">Expiry Date</string>
+    <string name="expiry"><font size="12">MM/YY</font></string>
+    <string name="cvc">CVC</string>
+    <string name="bank">No Bank Account</string>
+    <string name="digital_wallet">Create digital wallet</string>
+    <string name="fixed">Fixed</string>
+    <string name="hourly">Hourly</string>
+    <string name="budget">Your Budget</string>
+    <string name="tap">Double tap counter to specify</string>
+    <string name="task">What do you need done today?</string>
+
+    <!-- Transactions -->
+    <string-array name="Transactions">
+        <item>Payment History</item>
+        <item>Credit &amp; Debit Cards</item>
+        <item>GID Credits</item>
+        <item>Additional Payment Methods</item>
+    </string-array>
+
+    <!-- Transaction Icons -->
+    <string-array name="transactions_icons">
+        <item>@drawable/payment_history</item>
+        <item>@drawable/credit_card</item>
+        <item>@drawable/gid</item>
+        <item>@drawable/additional_payment</item>
+    </string-array>
+
+    <!-- Transaction Descriptions -->
+    <string-array name="transactions_descriptions">
+        <item>View incoming &amp; outgoing transactions</item>
+        <item>Tap here to Add</item>
+        <item>Balance Rs 1500</item>
+        <item>MCB Juice/Orange Money</item>
+    </string-array>
 </resources>
