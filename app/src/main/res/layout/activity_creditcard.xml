@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextfname"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:hint="@string/hint_fname"
+        android:padding="5dp"
+        android:background="@drawable/orange_border_button"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextsurname"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:hint="@string/hint_surname"
+        android:padding="5dp"
+        android:background="@drawable/orange_border_button"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignTop="@+id/editTextfname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editTextcreditcard"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:hint="@string/hint_creditcard"
+        android:padding="5dp"
+        android:background="@drawable/orange_border_button"
+        android:drawableRight="@drawable/camera"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/editTextsurname"
+        android:layout_alignEnd="@+id/editTextsurname" />
+
+    <EditText
+        android:id="@+id/editTextexpirydate"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:hint="@string/expiry"
+        android:padding="5dp"
+        android:background="@drawable/orange_border_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/editTextcvc"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:background="@drawable/orange_border_button"
+        android:layout_above="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextfname"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextfname"
+        android:layout_marginTop="26dp"
+        android:text="@string/firstname"
+        android:textStyle="bold"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextsurname"
+        android:layout_alignStart="@+id/editTextsurname"
+        android:layout_alignTop="@+id/textView4"
+        android:text="@string/surname"
+        android:textStyle="bold"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="@string/creditcard"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_below="@+id/editTextfname"
+        android:layout_alignLeft="@+id/editTextfname"
+        android:layout_alignStart="@+id/editTextfname" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expirydate"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:layout_below="@+id/editTextcreditcard"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cvc"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/editTextcvc"
+        android:layout_alignStart="@+id/editTextcvc" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextexpirydate"
+        android:layout_alignStart="@+id/editTextexpirydate"
+        android:layout_below="@+id/editTextexpirydate"
+        android:layout_marginTop="37dp"
+        android:text="@string/bank"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digital_wallet"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editTextcvc"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editTextcvc"
+        android:layout_marginBottom="73dp"
+        android:text="ADD"
+        android:textColor="@color/orange"
+        android:background="@drawable/orange_border_button"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/editTextcvc"
+        android:layout_toEndOf="@+id/textView5"
+        android:background="@color/white"
+        app:srcCompat="@drawable/question_mark"
+        android:layout_toRightOf="@+id/textView5" />
+
+
+</RelativeLayout>
