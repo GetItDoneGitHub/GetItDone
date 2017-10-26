@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewtask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="@string/task"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Deliveries"
+        android:layout_below="@+id/textViewtask"
+        android:layout_toLeftOf="@+id/textViewtask"
+        android:layout_toStartOf="@+id/textViewtask"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/moving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moving"
+        android:layout_above="@+id/delivery_img"
+        android:layout_alignLeft="@+id/casual"
+        android:layout_alignStart="@+id/casual" />
+
+    <TextView
+        android:id="@+id/tutoring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutoring"
+        android:layout_alignBaseline="@+id/moving"
+        android:layout_alignBottom="@+id/moving"
+        android:layout_toRightOf="@+id/textViewtask"
+        android:layout_toEndOf="@+id/textViewtask" />
+
+    <ImageView
+        android:id="@+id/delivery_img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/delivery"
+        android:layout_below="@+id/delivery"
+        android:layout_alignLeft="@+id/delivery"
+        android:layout_alignStart="@+id/delivery"
+        android:layout_toLeftOf="@+id/textViewtask"
+        android:layout_toStartOf="@+id/textViewtask" />
+
+    <ImageView
+        android:id="@+id/moving_img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/moving"
+        android:layout_alignTop="@+id/delivery_img"
+        android:layout_alignLeft="@+id/moving"
+        android:layout_alignStart="@+id/moving" />
+
+    <ImageView
+        android:id="@+id/tutor_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/tutor"
+        android:layout_alignBottom="@+id/moving_img"
+        android:layout_alignLeft="@+id/tutoring"
+        android:layout_alignStart="@+id/tutoring" />
+
+    <TextView
+        android:id="@+id/gardening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delivery_img"
+        android:layout_alignStart="@+id/delivery_img"
+        android:layout_below="@+id/delivery_img"
+        android:layout_marginTop="23dp"
+        android:text="Gardening"
+        android:layout_toLeftOf="@+id/textViewtask"
+        android:layout_toStartOf="@+id/textViewtask" />
+
+    <TextView
+        android:id="@+id/cleaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleaning"
+        android:layout_alignBaseline="@+id/gardening"
+        android:layout_alignBottom="@+id/gardening"
+        android:layout_alignLeft="@+id/moving"
+        android:layout_alignStart="@+id/moving" />
+
+    <TextView
+        android:id="@+id/babysitting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Babysitting"
+        android:layout_alignBaseline="@+id/cleaning"
+        android:layout_alignBottom="@+id/cleaning"
+        android:layout_alignLeft="@+id/tutor_img"
+        android:layout_alignStart="@+id/tutor_img" />
+
+    <ImageView
+        android:id="@+id/gardening_img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/gardening"
+        android:layout_below="@+id/gardening"
+        android:layout_alignLeft="@+id/gardening"
+        android:layout_alignStart="@+id/gardening"
+        android:layout_alignRight="@+id/delivery_img"
+        android:layout_alignEnd="@+id/delivery_img" />
+
+    <ImageView
+        android:id="@+id/cleaning_img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/cleaning"
+        android:layout_alignTop="@+id/gardening_img"
+        android:layout_alignLeft="@+id/cleaning"
+        android:layout_alignStart="@+id/cleaning" />
+
+    <ImageView
+        android:id="@+id/babysitting_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/cleaning_img"
+        android:layout_alignLeft="@+id/babysitting"
+        android:layout_alignStart="@+id/babysitting"
+        app:srcCompat="@drawable/babysitting"
+        android:layout_alignTop="@+id/cleaning_img"
+        android:layout_alignRight="@+id/babysitting"
+        android:layout_alignEnd="@+id/babysitting" />
+
+    <TextView
+        android:id="@+id/installations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gardening_img"
+        android:layout_alignStart="@+id/gardening_img"
+        android:layout_below="@+id/gardening_img"
+        android:layout_marginTop="21dp"
+        android:text="Installations"
+        android:layout_toLeftOf="@+id/textViewtask"
+        android:layout_toStartOf="@+id/textViewtask" />
+
+    <TextView
+        android:id="@+id/casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casual Workers"
+        android:layout_alignBaseline="@+id/installations"
+        android:layout_alignBottom="@+id/installations"
+        android:layout_toLeftOf="@+id/other_img"
+        android:layout_toStartOf="@+id/other_img"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/casual"
+        android:layout_alignEnd="@+id/tutoring"
+        android:layout_alignRight="@+id/tutoring"
+        android:layout_alignTop="@+id/casual"
+        android:text="Other" />
+
+    <ImageView
+        android:id="@+id/installations_img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/installations"
+        android:layout_below="@+id/installations"
+        android:layout_alignLeft="@+id/installations"
+        android:layout_alignStart="@+id/installations"
+        android:layout_marginTop="13dp"
+        android:layout_alignRight="@+id/gardening_img"
+        android:layout_alignEnd="@+id/gardening_img" />
+
+    <ImageView
+        android:id="@+id/casual_img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:srcCompat="@drawable/cl"
+        android:layout_alignTop="@+id/installations_img"
+        android:layout_alignRight="@+id/cleaning_img"
+        android:layout_alignEnd="@+id/cleaning_img" />
+
+    <ImageView
+        android:id="@+id/other_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/others"
+        android:layout_alignTop="@+id/casual_img"
+        android:layout_alignRight="@+id/babysitting_img"
+        android:layout_alignEnd="@+id/babysitting_img"
+        android:layout_alignLeft="@+id/babysitting_img"
+        android:layout_alignStart="@+id/babysitting_img" />
+
+
+</RelativeLayout>
